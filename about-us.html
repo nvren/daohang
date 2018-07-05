@@ -1,638 +1,1106 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta charset="utf-8">
-	<title>It网址导航</title>
-	<meta name="keywords" content="it导航, 互联网导航,互联网从业者导航,互联网从业者助手,互联网助手,编程导航,it资源导航,产品设计,互联网之家,it之家,白鹭引擎">
-    <meta name="description" content="it导航是互联网从业者的导航工作助手,白鹭引擎">
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Any小站导航|国外网站导航</title>
+	<meta name="keywords" content="Any小站, 代理, 国外, 名站" />
+	<meta name="description" content="国内真正可以访问的国外网站导航大全，收录汇集国内外知名网站，涵括新闻、体育、学术、生活、娱乐等方面内容站点，欢迎收藏使用">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<style type="text/css">
+		body,
+		p,
+		ul,
+		li,
+		input {
+			font-family: \5fae\8f6f\96c5\9ed1, Verdana, Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul,
+		li {
+			list-style: none;
+		}
+
+		a {
+			color: #666;
+			text-decoration: none;
+			outline: none;
+		}
+
+		a:hover,
+		a:active,
+		a:focus {
+			color: #03c;
+			text-decoration: underline;
+		}
+
+		img {
+			border: 0;
+		}
+
+		.fl {
+			float: left;
+		}
+
+		.clearfix:after {
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+
+		.clearfix {
+			*zoom: 1;
+		}
+
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		.topnav {
+			line-height: 30px;
+			color: #666;
+		}
+
+		.topnav .logo {
+			float: left;
+			margin: 28px 0 0 0;
+		}
+
+		.topnav .logo a {
+			font-size: 38px;
+			font-weight: 600;
+			color: #1e90ff;
+		}
+
+		.topnav .logo a:hover,
+		a:active,
+		a:focus {
+			color: #ff4b33;
+			text-decoration: none;
+		}
+
+		.topnav ul {
+			float: right;
+		}
+
+		.topnav ul li {
+			float: left;
+		}
+
+		.topnav ul li a {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.search {
+			margin: 15px auto 20px;
+			line-height: 30px;
+		}
+
+		.search .side {
+			border: 1px solid #ccc;
+			text-align: center;
+		}
+
+		.search input.srch_text {
+			width: 280px;
+			padding: 5px;
+			height: 18px;
+			line-height: 18px;
+			border: 1px solid #3782bf;
+			outline: none;
+			background: #fafdff;
+		}
+
+		.search input.srch_button {
+			width: 80px;
+			height: 30px;
+			line-height: 30px;
+			margin: 5px;
+			cursor: pointer;
+			color: #333;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			-webkit-appearance: button;
+			-moz-appearance: button;
+			appearance: button;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		.search input.srch_button:hover,
+		.search input.srch_button:active {
+			background-color: #e6e6e6;
+			border-color: #adadad;
+		}
+
+		.search .left {
+			float: left;
+		}
+
+		.search .right {
+			float: right;
+		}
+
+		.search label {
+			padding-left: 5px;
+		}
+
+		.search h1 {
+			height: 30px;
+			line-height: 30px;
+			margin: 0 auto;
+			font-size: 16pt;
+		}
+
+		.nav_list {
+			padding-bottom: 10px;
+		}
+
+		.title_bar {
+			margin: 0 0 8px 0;
+		}
+
+		.title_bar .title {
+			margin-right: 10px;
+			font-size: 15px;
+			font-weight: bold;
+			color: #4169e1;
+		}
+
+		.line_hr {
+			width: 890px;
+			height: 10px;
+			*line-height: 0;
+			border-bottom: 1px #ddd solid;
+		}
+
+		.icon_list {
+			width: -moz-calc(100% + 44px);
+			width: -webkit-calc(100% + 44px);
+			width: calc(100% + 44px);
+			margin: 17px 0 0;
+		}
+
+		.icon_list li {
+			position: relative;
+			float: left;
+			width: 56px;
+			height: 90px;
+			margin-right: 44px;
+		}
+
+		.icon_list li a {
+			display: block;
+			width: 56px;
+			height: 85px;
+			margin-bottom: 5px;
+		}
+
+		.icon_list li img {
+			width: 48px;
+			height: 48px;
+			padding: 4px;
+		}
+
+		.icon_list li span {
+			position: absolute;
+			bottom: 12px;
+			left: 0;
+			display: block;
+			width: 86px;
+			margin-left: -15px;
+			text-align: center;
+		}
+
+		.category {
+			width: -moz-calc(100% + 44px);
+			width: -webkit-calc(100% + 44px);
+			width: calc(100% + 44px);
+			line-height: 32px;
+			margin: 0 0 10px 0;
+		}
+
+		.category li {
+			float: left;
+			width: 100px;
+		}
+
+		.category li a:hover,
+		a:active,
+		a:focus {
+			text-decoration: none;
+			color: #fff;
+			background: #01b0ec;
+		}
+
+		.footer {
+			border-top: 1px #ddd solid;
+			padding: 20px 0 5px;
+			text-align: center;
+			color: #939393;
+		}
+
+		.showip {
+			margin: 10px 0;
+			line-height: 1.8;
+			text-align: center;
+			font-size: 9pt;
+			color: #008C00;
+			visibility: hidden;
+		}
+
+		.myip {
+			display: none;
+		}
+	</style>
 </head>
-<body>
- 
-<!--导航栏 begin-->
-<header id="topDiv">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container"> 
-      <div class="navbar-header">   
-        <a class="navbar-brand" href="index.html">       	 
-           <img src="img/logo.png" style="margin-top: -6px; "/>
-        </a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div id="navbar-collapse" class="collapse navbar-collapse">         
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a class="active" href="index.html"><span>程序</span></a></li>
-            	<li><a href="product.html" title="产品经理"><span>产品经理</span></a></li>
-                <li><a href="ui.html" title="UI"><span>UI</span></a></li>
-                <li><a href="cehua.html" title="策划"><span>策划</span></a></li>
-                <li><a href="art.html" title="美术"><span>美术</span></a></li>                
-                <li><a href="sound.html" title="音效素材"><span>音效素材</span></a></li>
-                <li><a href="zhaopin.html" title="招聘求职"><span>招聘求职</span></a></li>
-                <li><a href="luntan.html" title="论坛"><span>论坛</span></a></li>
-                <li><a href="engine.html" title="引擎"><span>引擎</span></a></li>
-            </ul>
-        </div>
-     </div>
- </nav>
- </header> 
-<!--导航栏 end-->
-<div class="container">
-        <div class="daohan">
-        	<ul>
-                <li><a href="https://github.com/" title="代码仓Github" target="_blank"><img src="img/github.png"pic/site/b_rrdscpjl.jpg" ></a></li>
-                <li><a href="https://nodejs.org/en/" title="nodejs" target="_blank"><img src="img/node.png"   ></a></li>
-                <li><a href="http://www.tiobe.com/tiobe_index?page=index" title="语言流行分布统计" target="_blank"><img src="img/yuyin.png"></a></li>
-                <li><a href="http://unity3d.com/cn/" title="Unity3d官网"><img src="img/u3d.png" ></a></li>               
-                <li><a href="http://stackoverflow.com/" title="stackoverflow技术问答官网"><img src="img/stack.png" ></a></li>
-                <li><a href="https://developer.apple.com/resources/" title="苹果开发者中心官网"><img src="img/app.png" ></a></li> 
-                <li><a href="http://www.cocoachina.com/" title="cocoachina开发社区"><img src="img/coco.png" ></a></li> 
-                <li><a href="http://facebook.github.io/react-native/" title="fackbook实用框架react-native "><img src="img/ract.png" ></a></li> 
-                <li><a href="http://pre.im/" title="内测分发"><img src="img/pre.png" ></a></li> 
-                <li><a href="http://cn.vuejs.org/" title="vuejs"><img src="img/vue.png" ></a></li>        	
-        	</ul>
-        </div>
-</div>
 
+<body style="padding:0 5px;">
+	<div class="container">
+		<div class="clearfix topnav">
+			<ul>
+				<li>
+					<a href="javascript:void(0);" onclick="sethomepage();return false;" title="设置为浏览器首页">设为首页</a>|</li>
+				<li>
+					<a href="javascript:void(0);" onclick="addfav();return false;" title="添加到浏览器书签">加入收藏</a>|</li>
+				<li>
+					<a class="science-surf" href="javascript:void(0);" title="替换为可访问网址">科学上网</a>|</li>
+				<li>
+					<a target="_blank" href="/feedback.html">意见反馈</a>|</li>
+			</ul>
+			<div class="logo">
+				<a href="https://www.anyproxy.cn/" rel="home">国外名站导航</a>
+			</div>
+		</div>
+		<div class="showip">
+			<div id="ip-address">
+				您现在的IP地址是：[ 未知 ] &nbsp; 来自： 未知
+			</div>
+			<div style="color:red;">
+				如果发现您的IP显示为国内IP，请点击右上角的
+				<a class="science-surf" href="javascript:void(0);" title="替换为可访问网址">科学上网</a>！
+				<br> 另外点击下面的
+				<a target="_blank" href="https://www.anyproxy.top/">在线网页代理</a>，有意外惊喜！
+			</div>
+		</div>
+		<div class="clearfix search">
 
- </div>
- 
- 
- 
- 
-<div class="container">
- 
-	<div class="site-area floor_1">
-                <div class="floor">html5</div>
-	                <ul>
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">游戏</a></li>
-	                    <li><a href="http://egret.com/" target="_blank" title="白鹭引擎用于制作H5游戏">Egret</a></li>
-	                    <li><a href="https://nodejs.org/en/" target="_blank">NodeJs</a></li>
-	                    <li><a href=" http://threejs.org/" target="_blank">Threejs</a></li>                   
-	                    <li><a href="https://github.com/Microsoft/TypeScript" target="_blank">TypeScript</a></li>
-	                    <li><a href="http://www.cocos.com/doc/tutorial/index?type=cocos2d-js" target="_blank">Coco2dJs</a></li>
-	                    <li><a href="http://createjs.com/" target="_blank">CreateJs</a></li>
-	                    <li><a href="http://www.layabox.com/" target="_blank">Layabox</a></li>
-	                    <li><a href="http://www.cocos.com/docs/creator/" target="_blank">CoCreator</a></li>
-	                    <li><a href=" http://www.phaser.io/" target="_blank" title="H5游戏引擎">phaser</a></li>
-	                                     
-	                </ul>
-	                <ul>	
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">css</a></li>
-	                    <li><a href="http://www.w3school.com.cn/css/" target="_blank">css教程</a></li>
-	                    <li><a href="http://www.runoob.com/css/css-tutorial.html" target="_blank">菜鸟css</a></li>
-	                    <li><a href="http://www.w3school.com.cn/css3/css3_animation.asp" target="_blank">css3 动画</a></li>                 
-	                    <li><a href="http://css.doyoe.com/" target="_blank">css参考手册</a></li>
-	                    <li><a href="http://www.daqianduan.com/tag/css" target="_blank">大前端</a></li>
-	                    <li><a href="http://www.bootcss.com/p/lesscss/" target="_blank">less</a></li>
-	                    <li><a href="http://sass.bootcss.com/docs/sass-reference/" target="_blank">sass</a></li>
-	                    <li><a href="http://element.eleme.io/#/zh-CN" target="_blank" title="饿了么后台组件">element</a></li>
-	                </ul>
+			<div class="side">
+				<div style="margin:0 auto;padding:10px 0;">
+					<form target="_blank" action="https://www.anyproxy.top/proxy" method="get">
+						<h1>
+							<a target="_blank" href="https://www.anyproxy.top/">在线网页代理</a>
+						</h1>
+						<div>
+							<a target="_blank" href="https://s.click.taobao.com/t?e=m%3D2%26s%3D05nbWrmohH4cQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClArEVyXG2iE4hqqacliaqsdBvfiy%2F4trK8zo9t866U1ORQVUdI%2BBf9CBmuFrWaviWBhmIkXBqRClNTcEU%2BDykfuSM%2BhtH71aX6uIOTs4KMj3yjpOyWSRdiSZDEm2YKA6YIrbIzrZDfgWtwGXLU4WXsy8CZuZoOOkzXFxfvOyje0ynomfkDJRs%2BhU%3D">
+								<img style="vertical-align:bottom;" width="240" src="https://gw.alipayobjects.com/zos/rmsportal/mLMbolszoKKAPHiClcvt.jpg"
+								/>
+							</a>
+						</div>
+						<div style="margin:10px auto;">
+							<div>
+								<label>输入网址：</label>
+								<input type="url" class="srch_text" name="url" id="url" required />
+								<input type="submit" value="Go" class="srch_button" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			</form>
+		</div>
+		<div class="clearfix nav_list">
+			<div class="clearfix title_bar">
+				<span class="fl title">名站导航</span>
+				<div class="fl line_hr"></div>
+			</div>
+			<div class="icon_list">
+				<ul>
+					<li>
+						<a target="_blank" href="https://www.baidu.com/">
+							<img src="images/baidu.png" />
+							<span>百度</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.taobao.com/">
+							<img src="images/taobao.png" />
+							<span>淘宝</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.tmall.com/">
+							<img src="images/tmall.png" />
+							<span>天猫</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.google.com.hk/">
+							<img src="images/google.png" />
+							<span>Google</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://stackoverflow.com/">
+							<img src="images/stackoverflow.png" />
+							<span>S.O.</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.wikipedia.org/">
+							<img src="images/wikipedia.png" />
+							<span>Wikipedia</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.youtube.com/">
+							<img src="images/youtube.png" />
+							<span>YouTube</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.facebook.com/">
+							<img src="images/facebook.png" />
+							<span>Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://twitter.com/">
+							<img src="images/twitter.png" />
+							<span>Twitter</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.gmail.com">
+							<img src="images/gmail.png" />
+							<span>Gmail</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.yahoo.com/">
+							<img src="images/yahoo.png" />
+							<span>Yahoo!</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.msn.com/">
+							<img src="images/msn.png" />
+							<span>MSN</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.dropbox.com/">
+							<img src="images/dropbox.png" />
+							<span>Dropbox</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://vimeo.com/">
+							<img src="images/vimeo.png" />
+							<span>Vimeo</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.bbc.com/zhongwen/simp">
+							<img src="images/bbc.png" />
+							<span>BBC</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://edition.cnn.com/">
+							<img src="images/cnn.png" />
+							<span>CNN</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://cn.nytimes.com/">
+							<img src="images/nytimes.png" />
+							<span>纽约时报</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.reuters.com/">
+							<img src="images/reuters.png" />
+							<span>路透社</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://asahichinese-j.com/">
+							<img src="images/asahi.png" />
+							<span>朝日新闻</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.zaobao.com/">
+							<img src="images/zaobao.png" />
+							<span>联合早报</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://hk.appledaily.com/">
+							<img src="images/appledaily.png" />
+							<span>苹果日报</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.mingpao.com/">
+							<img src="images/mingpao.png" />
+							<span>明报</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.rthk.hk/">
+							<img src="images/rthk.png" />
+							<span>香港电台</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.linkedin.com/">
+							<img src="images/linkedin.png" />
+							<span>LinkedIn</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix nav_list">
+			<div class="clearfix title_bar">
+				<span class="fl title">新闻资讯</span>
+				<div class="fl line_hr"></div>
+			</div>
+			<div class="category">
+				<ul>
+					<li>
+						<a target="_blank" href="https://news.google.com/news/">谷歌新闻</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.yahoo.com/news/">雅虎新闻</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.foxnews.com/">福克斯新闻</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.msn.com/en-us/news">MSN新闻</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.ap.org/en-gb/">美联社</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://time.com/">时代周刊</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.newsweek.com/">新闻周刊</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.usatoday.com/">今日美国</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.latimes.com/">洛杉矶时报</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.thetimes.co.uk/">泰晤士报</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.voachinese.com/">美国之音</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://cn.rfi.fr/">RFI法广</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.dw.com/">德国之声</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://tw.news.yahoo.com/">Yahoo!奇摩</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://hk.news.yahoo.com/">Yahoo!香港</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.scmp.com/">南华早报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://on.cc/">东方互动</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.wenweipo.com/">文汇网</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.chinatimes.com/">中国时报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.chinatimes.com/">旺报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.ltn.com.tw/">自由时报</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://udn.com/">联合新闻网</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://std.stheadline.com/">星岛日报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://chn.chosun.com/">朝鲜日报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.janes.com/">简氏防务周刊</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://cn.wsj.com/">华尔街日报</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.washingtonpost.com/">华盛顿邮报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.yomiuri.co.jp/">读卖新闻</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.lefigaro.fr/">费加罗报</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.theguardian.com/">卫报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.mirror.co.uk/">每日镜报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://observer.guardian.co.uk/">观察家报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.independent.co.uk/">独立报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.chicagotribune.com/">芝加哥论坛报</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.lesechos.fr/">回声报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.lemonde.fr/">世界报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.smh.com.au/">悉尼晨报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.news.com.au/">新闻在线</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://news.cnet.com/">CNET科技</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.ftchinese.com/">FT中文网</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://the-sun.on.cc/">太阳报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.hket.com/">经济日报</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://skypost.ulifestyle.com.hk/">晴报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.dwnews.com/">多维新闻</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.backchina.com/">倍可亲</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix nav_list">
+			<div class="clearfix title_bar">
+				<span class="fl title">体育竞技</span>
+				<div class="fl line_hr"></div>
+			</div>
+			<div class="category">
+				<ul>
+					<li>
+						<a target="_blank" href="https://sports.yahoo.com/">雅虎体育</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.espn.com/">ESPN</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.nba.com/">NBA</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.skysports.com/">天空体育</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.foxsports.com/">福克斯体育</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://nbcsports.nbcnews.com/">NBC体育</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.cbssportsnetwork.com/">CBS体育网</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.teamtalk.com/">TEAMtalk</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.sports.com/">Sports英</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.sify.com/sports/">SIFY体育</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.tsn.ca/">TSN体育</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.cbssports.com/">CBS体育</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.usatoday.com/sports/">美国体育</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.sportinglife.com/">体育生活</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.sportingnews.com/">体育新闻</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.sportsnetwork.com/">体育网络</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.mundodeportivo.com/">世界体育报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.sportbild.de/">体育图片报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.kicker.de/">踢球者</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://espnfc.com/">ESPN FC</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.tvgolo.com/">TVGOLO</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://as.com/">阿斯报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.marca.com/">马卡报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.lequipe.fr/">队报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.gazzetta.it/">米兰体育报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.corrieredellosport.it/">罗马体育报</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.tuttosport.com/">都灵体育报</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.sikids.com/">SI KIDS</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.olympic.org/">奥林匹克</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.fifa.com/">国际足联</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.fiba.basketball/">国际篮联</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.iaaf.org/">国际田联</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.itftennis.com/">国际网联</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.fina.org/">国际泳联</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.fivb.ch/">国际排联</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.ittf.com/">国际乒联</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://parking.zunmi.cn/">国际拳联</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.paralympic.org/">国际残联</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix nav_list">
+			<div class="clearfix title_bar">
+				<span class="fl title">学术期刊</span>
+				<div class="fl line_hr"></div>
+			</div>
+			<div class="category">
+				<ul>
+					<li>
+						<a target="_blank" href="http://www.cnki.net/">CNKI</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://ccc.calis.edu.cn/">CALIS</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.webofknowledge.com/">WOK</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.sciencedirect.com/">SD</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.informs.org/">INFORMS</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.elsevier.com/">Elsevier</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://link.springer.com/">Springer</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.jstor.org/">JSTOR</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.emeraldinsight.com/">Emerald</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://search.ebscohost.com/">EBSCO</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.tandfonline.com/">T &amp; F</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.proquest.com/">Proquest</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.engineeringvillage.com/">EI检索</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://mjl.clarivate.com/">SCI/SSCI</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://sci-hub.hk/">Sci-Hub</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://onlinelibrary.wiley.com/">Wiley</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://misq.org/">MISQ</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.jmis-web.org/issues">JMIS</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://aisel.aisnet.org/">Aisnet</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://journals.sagepub.com/home/jom">JOM</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.nber.org/">NBER</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.ssrn.com/">SSRN</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix nav_list">
+			<div class="clearfix title_bar">
+				<span class="fl title">休闲娱乐</span>
+				<div class="fl line_hr"></div>
+			</div>
+			<div class="category">
+				<ul>
+					<li>
+						<a target="_blank" href="http://digg.com/">DIGG</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.imdb.com/">IMDb</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.cbs.com/shows/big_bang_theory/">生活大爆炸</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.grammy.com/">格莱美奖</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.bbc.co.uk/ukchina/simp/">BBC英伦网</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.festival-cannes.com/">戛纳电影节</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://uncyclopedia.tw/">伪基百科</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://igossip.com/">iGossip</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.yahoo.com/entertainment">Yahoo!娱乐</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.fimela.com/">FIMELA</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.theonion.com/">The Onion</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.apple.com/itunes/">iTunes</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.flixster.com/">Flixster</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://perezhilton.com/">Perez Hilton</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.popsugar.com/">PopSugar</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.rottentomatoes.com/">烂番茄</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.justjared.com/">Just Jared</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://ew.com/">娱乐周刊</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.celebparasite.com/">CelebParasite</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://people.com/">People</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.tmz.com/">TMZ.COM</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.billboard.com/">Billboard</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.thesun.co.uk/">The Sun</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.fhm.com/">男人帮</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.penthouse.com/">阁楼杂志</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.playboy.com/">花花公子</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix nav_list">
+			<div class="clearfix title_bar">
+				<span class="fl title">影音视频</span>
+				<div class="fl line_hr"></div>
+			</div>
+			<div class="category">
+				<ul>
+					<li>
+						<a target="_blank" href="http://www.dailymotion.com/">Dailymotion</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.hulu.com/">Hulu</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.howcast.com/">Howcast</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.break.com/">Break</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.nicovideo.jp/">niconico</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.mtv.com/">MTV</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.pandora.tv/">潘多拉TV</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.youmaker.com/">优美客</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.screenjunkies.com/">iFilm</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.goyeah.com/">Goyeah</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://online.hk/">香港短片网</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://now.com/">now宽频</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://tv.on.cc/">notv东方</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://vlog.xuite.net/">随意窝影音</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.yam.com/">番薯藤</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://tw.news.yahoo.com/video/">奇摩影音</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.tvb.com/">TVB无线</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.hkatv.com/">ATV亚视</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://hk.news.yahoo.com/video/">雅虎香港</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.im.tv/">Erapost</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.live365.com/">Live365</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.shoutcast.com/">NetRadio</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.mixify.com/">Mixify DJ</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.spinner.com/">Spinner</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.pandora.com/">Pandora电台</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.vevo.com/">VEVO音乐</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<span style="display:inline-block;">Copyright &copy;
+				<span id="year">2018</span> AnyProxy. All Rights Reserved.</span>
+			<br>
+			<a style="display:inline-block;text-decoration:none;color:#939393;cursor:auto;" target="_blank" href="http://www.miitbeian.gov.cn/">浙ICP备17059456号</a>
+			<br>
+			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602008921" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+				<img src="https://gw.alipayobjects.com/zos/rmsportal/dWzWkqxlJlCkcbqQdqlt.png" style="float:left;" />
+				<p style="float:left;height:20px;line-height:20px;margin:0px 0px 0px 5px; color:#939393;cursor:auto;">浙公网安备 33010602008921号</p>
+			</a>
+		</div>
+	</div>
+	<script>
+		// 设为首页
+		var sethomepage = function () {
+			if (document.all) {
+				document.body.style.behavior = 'url(#default#homepage)';
+				document.body.setHomePage(window.location.href);
+			} else if (window.sidebar) {
+				if (window.netscape) {
+					try {
+						netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+					} catch (e) {
+						alert("该操作被浏览器拒绝, 如果想启用该功能, 请在地址栏内输入 about:config, 然后将项 signed.applets.codebase_principal_support 值该为true");
+					}
+				}
+				var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+				prefs.setCharPref('browser.startup.homepage', window.location.href);
+			} else {
+				alert('您好, 您的浏览器不支持直接设为首页, 请使用浏览器菜单手动设置本站为首页, 祝您使用愉快!');
+			}
+		}
 
-                <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">框架</a></li>
-                    <li><a href="http://cn.vuejs.org/" target="_blank">Vuejs</a></li>
-                    <li><a href="https://github.com/angular/angular" target="_blank">AngularJs</a></li>
-                    <li><a href="http://jquery.com/" target="_blank">jquery</a></li>
-                    <li><a href="http://www.requirejs.cn/" target="_blank">RequireJs</a></li>
-                    <li><a href="http://www.zeptojs.cn/" target="_blank">zeptojs</a></li>
-                    <li><a href="https://github.com/facebook/react-native" target="_blank">React Native</a></li> 
-                    <li><a href="http://weex.apache.org/" target="_blank">Weex</a></li> 
-                    <li><a href="https://github.com/ElemeFE/element" target="_blank">elemnt</a></li>                   
-                </ul>
+		// 加入收藏
+		var addfav = function () {
+			if (document.all) {
+				try {
+					window.external.addFavorite(window.location.href, document.title);
+				} catch (e) {
+					alert("您好, 您的浏览器不支持自动加入收藏, 请使用浏览器菜单手动设置, 祝您使用愉快!");
+				}
 
-                <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">教程</a></li>
-                    <li><a href="http://www.w3school.com.cn/" target="_blank">w3school</a></li>
-                    <li><a href="http://www.jikexueyuan.com/" target="_blank">极客学院</a></li>
-                    <li><a href="http://www.imooc.com/" target="_blank">慕课网</a></li>
-                    <li><a href="http://www.icoolxue.com/" target="_blank">爱酷</a></li>
-                    <li><a href="http://www.chuanke.com/" target="_blank">百度传课</a></li>
-                    <li><a href="http://ke.qq.com/" target="_blank">腾讯学堂</a></li>
-                     
-                    <li><a href="  http://web.jobbole.com/" target="_blank">伯乐在线</a></li>  
-                    <li><a href=" http://edu.51cto.com/" target="_blank">51cto</a></li>
-                </ul>              
-                 <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">UI</a></li>
-                    <li><a href="http://frozenui.github.io/" target="_blank">frozenui</a></li>
-                    <li><a href="http://weui.github.io/weui/" target="_blank">weui</a></li> 
-                    <li><a href="http://amazeui.org/" target="_blank">amazeui</a></li>      
-                    <li><a href="http://ionicframework.com/" target="_blank">ionic</a></li>                   
-                    <li><a href="http://metroui.org.ua/ " target="_blank">Metro UI</a></li>
-                    <li><a href="http://framework7.taobao.org/" target="_blank">framework7</a></li>
-                    <li><a href="http://m.sui.taobao.org/" target="_blank">SUI Mobile</a></li>
-                    <li><a href="http://dev.dcloud.net.cn/mui/" target="_blank">MUI</a></li>
-                    <li><a href="http://jqweui.com/" target="_blank">JqWeui</a></li>
-                </ul> 
-              
-                   <ul>
-                     <li class="title"><a href="#" onclick="return false" target="_blank">营销</a></li>                    
-                     <li><a href="http://www.larkapp.com/pc.html" target="_blank">青雀</a></li> 
-                     <li><a href="http://www.epub360.com/" target="_blank">意派</a></li> 
-                     <li><a href="http://www.maka.im/" target="_blank">MAKA</a></li> 
-                     <li><a href="http://eqxiu.com/" target="_blank">企业秀</a></li> 
-                     <li><a href="http://qyx.totop.net/" target="_blank">易企秀</a></li> 
-                     <li><a href="http://www.rabbitpre.com/" target="_blank">兔展</a></li> 
-                     <li><a href="http://www.cloud7.com.cn/chuye" target="_blank">初页</a></li>
-                     <li><a href=" http://xiumi.us/#/" target="_blank">秀米</a></li>
-                     <li><a href=" https://minapp.com/miniapp/" target="_blank">知晓程序</a></li>
-                    
-                  </ul >
-                    <ul>
-                      <li class="title"><a href="#" onclick="return false" target="_blank">JS套装</a></li>
-                      <li><a href="http://www.gulpjs.com.cn/" target="_blank">Gulp</a></li>
-                      <li><a href="http://webpack.github.io/" target="_blank">webpack</a></li>
-                      <li><a href="http://www.gruntjs.net/" target="_blank">grunt</a></li>
-                      <li><a href="http://browserify.org/" target="_blank">browserify</a></li>
-                      <li><a href="http://babeljs.io/" target="_blank">babeljs</a></li>  
-                      <li><a href="http://es6.ruanyifeng.com/" target="_blank">es6语法</a></li>
-                      <li><a href="https://www.npmjs.com/" target="_blank">npm</a></li>
-                      <li><a href="http://cookingjs.github.io/zh-cn/index.html" target="_blank">cooking</a></li>                     
-                   </ul >
-                   <ul>
-                      <li class="title"><a href="#" onclick="return false" target="_blank">压缩</a></li>
-                      <li><a href="https://tinypng.com/" target="_blank">tinyPNG</a></li>                    
-                   </ul >
-                   <ul>
-                      <li class="title"><a href="#" onclick="return false" target="_blank">打包</a></li>
-                      <li><a href="http://cordova.apache.org/" target="_blank" title="跨平台打包">cordova</a></li>                    
-                   </ul >
-                    <ul>
-                      <li class="title"><a href="#" onclick="return false" target="_blank">前端</a></li>
-                      <li><a href="https://juejin.im/" target="_blank">掘金</a></li>
-                      <li><a href="https://www.awesomes.cn/" target="_blank">awesomes</a></li>                   
-                     <li><a href="https://vuex.vuejs.org/zh-cn/" target="_blank">vueX</a></li>  
-                                                  
-                   </ul >
-                    <ul>
-                      <li class="title"><a href="#" onclick="return false" target="_blank">小程序</a></li>
-                      <li><a href="https://www.youzanyun.com/zanui/weapp#/zanui/form/field" target="_blank">有赞</a></li>
-                      <li><a href="https://github.com/Tencent/weui-wxss" target="_blank">weUI</a></li>
-		                  <li><a href="https://github.com/skyvow/wux " target="_blank">Wux</a></li>
-                      <li><a href="./tool/wechat.html " target="_blank">代码片段</a></li>
-                                                 
-                   </ul > 
-            </div>
- 
-         <div class="site-area floor_3">
-                <div class="floor">实用工具</div>
-	                <ul>
-	                <li class="title"><a href="#" onclick="return false" target="_blank">工具</a></li>
-                    <li><a href="https://sourceforge.net/projects/tortoisesvn/" target="_blank">TortoiseSVN</a></li>
-                  <li><a href="http://index.baidu.com/" target="_blank">百度指数</a></li>
-                  <li><a href="http://note.youdao.com/" target="_blank">有道云笔记</a></li>
-                  <li><a href="http://tool.chinaz.com/" target="_blank">站长工具</a></li>
-                  <li><a href="http://www.peise.net/tools/web/" target="_blank">配色工具</a></li>
-                    <li><a href="https://maxiang.io/" target="_blank">马克飞象</a></li>               
-                  <li><a href="http://www.getmarkman.com/" target="_blank">马克鳗</a></li>
-                  <li><a href="http://www.axure.com.cn/1896/" target="_blank">Axure下载</a></li>
-                  
-                  <li><a href="https://www.onenote.com/" target="_blank">onenote</a></li>
-                  <li><a href="http://rj.baidu.com/soft/detail/17292.html" target="_blank">Freemind</a></li>                  
-                    <li><a href="http://www.adobe.com/support/flashplayer/debug_downloads.html" target="_blank">flash player</a></li>                 
-                  </ul >
-                  
-                    <ul>
-                     <li class="title"><a href="#" onclick="return false" target="_blank">手册</a></li>
-                  <li><a href="http://help.adobe.com/zh_CN/FlashPlatform/reference/actionscript/3/" target="_blank">As3帮助文档</a></li> 
-                    <li><a href="http://edn.egret.com/cn/apidoc/" target="_blank">Egret API</a></li> 
-                    <li><a href="http://manual.luaer.cn/ " target="_blank">lua手册</a></li> 
-                    <li><a href=" http://doc.mysql.cn/ " target="_blank">mysql手册</a></li> 
-                    <li><a href=" http://git-scm.com/docs " target="_blank">git手册</a></li> 
-                  </ul>
-                   
-                
-                <ul>
-                   <li class="title"><a href="#" onclick="return false" target="_blank">云平台</a></li>
-                  <li><a href="http://www.qcloud.com/" target="_blank">腾讯云</a></li> 
-                  <li><a href="https://www.aliyun.com/" target="_blank">阿里云</a></li> 
-                  <li><a href="http://www.sinacloud.com/" target="_blank">新浪云</a></li>  
-                  <li><a href=" https://cloud.baidu.com/" target="_blank">百度云</a></li>                  
-              </ul>
-              
-              <ul>
-              	  <li class="title"><a href="#" onclick="return false" target="_blank">微信开发</a></li>
-                  <li><a href="https://mp.weixin.qq.com/" target="_blank">微信公众平台</a></li> 
-                    <li><a href="https://pay.weixin.qq.com/index.php/home/login?return_url=%2Findex.php%2Faccount" target="_blank">微信商户平台</a></li> 
-                    <li><a href="https://zb.weixin.qq.com/" target="_blank">摇一摇周边</a></li>    
-                    <li><a href="http://mp.weixin.qq.com/wiki/home/index.html" target="_blank">微信开发文档</a></li>      
-                    <li><a href="https://pay.weixin.qq.com/wiki/doc/api/index.html" target="_blank">微信支付文档</a></li> 
-                   <li><a href="http://mp.weixin.qq.com/wiki/10/e5f772f4521da17fa0d7304f68b97d7e.html" target="_blank">微信调试工具</a></li> 
-                     <li><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/" target="_blank">小程序</a></li> 
-                </ul>
-                  <ul>
-                  	<li class="title"><a href="#" onclick="return false" target="_blank">开放平台</a></li>
-                  <li><a href="http://open.qq.com/" target="_blank">QQ开放平台</a></li>   
-                  <li><a href="http://open.weibo.com/" target="_blank">微博开放平台</a></li> 
-                  <li><a href="http://dev.pp.cn/" target="_blank">pp助手</a></li>  
-              </ul>
-               <ul>
-               	 <li class="title"><a href="#" onclick="return false" target="_blank">编辑器</a></li>
-                  <li><a href=" https://notepad-plus-plus.org/" target="_blank" title="实用的文本编辑器">notepad</a></li> 
-                  <li><a href="http://www.sublimetext.com/3" target="_blank" title="跨平台的编辑器">sublimetext</a></li>
-                  <li><a href="http://brackets.io/" target="_blank" title="adobe开源的编辑器">brackets</a></li>
-                  <li><a href="https://atom.io/" target="_blank" title="社区开源的编辑器">atom</a></li>
-                  <li><a href="https://code.visualstudio.com/" target="_blank" title="微软编辑器">vscode</a></li>
-                  <li><a href="http://www.ultraedit.com/" target="_blank" title="厉害编辑器">ultraedit</a></li>
-                  <li><a href="https://www.editplus.com/" target="_blank" title="editplus">editplus</a></li>            
-              </ul> 
-               
-                <ul>
-                 <li class="title"><a href="#" onclick="return false" target="_blank">服务器</a></li>
-                  <li><a href="http://nginx.org/" target="_blank" title="俄罗斯反向代理服务器">Nginx</a></li> 
-                  <li><a href="https://tomcat.apache.org/" target="_blank" title="java平台的tomcat">Tomcat</a></li>
-                  <li><a href="http://www.apache.org/dyn/closer.cgi" target="_blank" title="apache开源">Apache</a></li>
-                  <li><a href="https://www.apachefriends.org/zh_cn/index.html" target="_blank" title="PHP服务器">XAMPP</a></li>   
-                  <li><a href="http://www.ampps.com/" target="_blank" title="集成工具">AMPP</a></li>                  
-              </ul> 
-            </div>
-            
-            
-   
-        	<div class="site-area floor_2">
+			} else if (window.sidebar) {
+				window.sidebar.addPanel(document.title, window.location.href, "");
+			} else {
+				alert("您好, 您的浏览器不支持自动加入收藏, 请使用浏览器菜单手动设置, 祝您使用愉快!");
+			}
+		}
+	</script>
+	<script src="https://gw.alipayobjects.com/os/rmsportal/JdEpaOqbNgKDgeKLvRXV.js"></script>
+	<script>
+		$.ajax({
+			url: 'https://www.anyproxy.top/ss/getip',
+			dataType: 'jsonp',
+			success: function (arr) {
+				if (arr && arr.length) {
+					var ip = arr[0];
+					$('#ip-address').html('您现在的IP地址是：[ ' + ip.address + ' ] &nbsp; 来自： ' + ip.location);
+					$('.showip').css('visibility', 'visible');
+				}
+			}
+		});
 
-                <div class="floor">java</div>
-                <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">社区</a></li>
-                    <li><a href="http://www.iteye.com/" target="_blank">iteye</a></li>                   
-                    <li><a href="http://www.csdn.net/" target="_blank">CSDN</a></li>
-                    <li><a href="http://www.oschina.net/question/tag/java/" target="_blank">oschina</a></li>
-                    <li><a href="http://developer.51cto.com/java/" target="_blank">51cto</a></li>  
-                    <li><a href="http://www.importnew.com/" target="_blank">importnew</a></li>  
-                    <li><a href="https://www.ibm.com/developerworks/cn/java/" target="_blank" title="ibm java开发">ibm-java</a></li>  
-                    <li><a href="http://www.infoq.com/cn/java/news/" target="_blank" title="infoq java系列">infoq</a></li>       
-                </ul>
-                 <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">IDE</a></li>
-                    <li><a href="http://www.eclipse.org/downloads/" target="_blank">Eclipse</a></li>                   
-                    <li><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ </a></li>
-                    <li><a href="https://netbeans.org/" target="_blank">NetBean </a></li>
-                                
-                </ul>
-                   <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">教程</a></li>
-                    <li><a href="http://edu.51cto.com/course/course_id-513.html" target="_blank">javaSE</a></li>                   
-                    <li><a href="http://edu.51cto.com/course/course_id-960.html" target="_blank">Struts2 </a></li>   
-                    <li><a href="http://edu.51cto.com/course/course_id-431.html" target="_blank">Hibernate </a></li>  
-                    <li><a href="http://blog.csdn.net/zhangerqing" target="_blank">java之美 </a></li>  
-                   <li><a href=" http://wenku.baidu.com/view/c29ee7503b3567ec102d8ae5.html?from=search" target="_blank">设计模式 </a></li>  
-                   <li><a href=" http://blog.csdn.net/column/details/concurrency.html" target="_blank">并发编程 </a></li> 
-                   <li><a href=" http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html" target="_blank">jdk配置 </a></li> 
-                   <li><a href="http://www.chuanke.com/course/_java_____.html" target="_blank" title="百度传课">java入门 </a></li> 
-                  
-                 </ul>
-                  <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">文档</a></li>
-                    <li><a href="http://tool.oschina.net/apidocs/apidoc?api=jdk-zh" target="_blank">java文档</a></li> 
-                    <li><a href="http://www.yq1012.com/ThinkingInJava/" target="_blank" title="经典之作">thinkinjava</a></li>   
-                    <li><a href="http://www.cnblogs.com/zhangzhu/archive/2013/07/04/3172486.html" target="_blank" title="mysql命令">mysql命令</a></li>                    
-                </ul>   
-                  <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">工具</a></li>
-                    <li><a href="https://tomcat.apache.org/" target="_blank">tomcat</a></li>   
-                    <li><a href=" http://hadoop.apache.org/docs/r1.0.4/cn/quickstart.html" target="_blank">Hadoop</a></li>  
-                    <li><a href="http://nginx.org/" target="_blank" title="反向代理服务器">nginx</a></li> 
-                    <li><a href="http://www.oracle.com/cn/downloads/index.html" target="_blank" title="Oracle 甲骨文">Oracle </a></li> 
-                    <li><a href="http://thrift.apache.org/" target="_blank" title="协议 框架">thrift </a></li>
-                    <li><a href="http://www.ruanyifeng.com/blog/2014/05/restful_api.html" target="_blank" title="协议 框架">RESTful</a></li>                   
-                    <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html" target="_blank" title="jdk">jdk下载</a></li> 
-                </ul>
-                    <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">名博</a></li>
-                    <li><a href="http://www.raychase.net/aboutme" target="_blank">四火的唠叨</a></li> 
-                    <li><a href="http://blog.2baxb.me/" target="_blank">微博架构</a></li> 
-                    <li><a href="http://blog.csdn.net/zjf280441589/article/details/45639523" target="_blank">翡青的博客</a></li> 
-                    <li><a href="http://www.soulteary.com/" target="_blank">苏洋阿里</a></li> 
-                    <li><a href="http://www.cnblogs.com/haibindev/archive/2012/04/16/2450989.html" target="_blank">流技术</a></li> 
-                                  
-                </ul>     
-                <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">面试</a></li>
-                    <li><a href="http://www.importnew.com/10980.html" target="_blank">面试题</a></li> 
-                    <li><a href="http://www.cnblogs.com/lanxuezaipiao/p/3371224.html" target="_blank">笔试题</a></li> 
-                    <li><a href="http://www.nowcoder.com/questionCenter?mutiTagIds=639" target="_blank">牛客网</a></li>                    
-                </ul> 
-                <ul>
-                    <li class="title"><a href="#" onclick="return false" target="_blank">Kotlin</a></li>
-                    <li><a href=" http://kotlinlang.org/" target="_blank">Kotlin</a></li>                      
-                </ul>
- 
-            </div>
-            	<div class="site-area floor_3">
-	                <div class="floor">unity3d</div>
-	                <ul> 
-	                	 <li class="title"><a href="#" onclick="return false" target="_blank">UI</a></li>
-	                	 <li><a href="http://www.fairygui.com/" target="_blank">FairyGUI</a></li>
-	                </ul>	
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">u3d</a></li>
-	                    <li><a href="http://unity3d.com/cn/" target="_blank">U3d官网</a></li>
-					    <li><a href=" http://www.ceeger.com/" target="_blank">unity圣殿</a></li> 						  
-						<li><a href=" http://www.unitytrain.cn/" target="_blank">蛮牛教育</a></li> 
-					    <li><a href=" http://unity.jb51.net" target="_blank">unity之家</a></li> 
-						<li><a href=" http://www.unity.5helpyou.com/" target="_blank">unity学习网</a></li>
-						<li><a href=" http://dev.arinchina.com/" target="_blank">AR中国</a></li>
-						<li><a href=" http://www.u3dchina.com" target="_blank">unity开发联盟</a></li> 
-	                </ul>
-	                 <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">经验</a></li>
-	                    <li><a href="http://liweizhaolili.blog.163.com/" target="_blank">阿赵</a></li>
-	                    <li><a href="http://www.taikr.com/course/explore" target="_blank">泰课在线</a></li>
-	                    <li><a href=" http://www.xuanyusong.com" target="_blank">雨凇MOMO</a></li> 
-	                    <li><a href=" http://blog.sina.com.cn/u/1192309394" target="_blank">风宇冲的博客</a></li>
-	                    <li><a href=" http://blog.csdn.net/i_dovelemon" target="_blank">i_dovelemon</a></li> 
-	                    <li><a href=" http://www.luzexi.com/" target="_blank">陆泽西的blog</a></li> 
-	                     
-	                </ul>
-                </div>
-            
-            	<div class="site-area floor_4">
-	                <div class="floor">.net</div>	
-	                <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">文档</a></li>
-	                    <li><a href="https://msdn.microsoft.com/zh-cn/library/gg145045.aspx" target="_blank">MSDN</a></li>	                    
-	                    <li><a href="http://www.open-open.com/doc/list/38" target="_blank">Open文档</a></li>	
-	                    <li><a href="http://www.w3school.com.cn/aspnet/aspnet_reference.asp" target="_blank">3cshool</a></li>
-	                </ul>
-	                 <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">教程</a></li>
-	                    <li><a href="http://www.51zxw.net/list.aspx?cid=410" target="_blank">自学网</a></li>	
-	                    <li><a href=" http://bbs.cskin.net/" target="_blank">cskin论坛</a></li>	
-	                    <li><a href="http://www.codeproject.com/" target="_blank" title="外国站点有不错的c#资源">codeproject</a></li>	
-	                    <li><a href="http://www.open-open.com/doc/view/761be848ab104800b234d12b58a6b2dc" target="_blank">设计模式</a></li>
-	                    <li><a href="http://www.zhihu.com/question/31819066" target="_blank">aspx学习路线</a></li>	
+		function getProxyURL(src) {
+			if (typeof src === 'string') {
+				if (/^\/\//.test(src)) {
+					src = location.protocol + src;
+				}
+				if (!/^http(s)?\:/.test(src)) {
+					return src;
+				}
+				var reg = /^http(s)?\:\/\/(.+\.)?(anyproxy|proxyit|baidu|zhihu|sohu|alipayobjects|bdstatic|gtimg|qq|itc|sohucs|taobao|tmall|tencent|checkdomain)\.(cc|cn|com|net|org|top|de)/i;
+				if (reg && typeof reg.test === 'function' && reg.test(src)) {
+					return src;
+				}
+				return 'https://www.anyproxy.top/proxy?target=' + btoa(encodeURI(src));
+			}
+			return src;
+		}
 
-	                </ul>
-	                <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">开发</a></li>
-	                     <li><a href="http://www.microsoft.com/zh-cn/download/details.aspx?id=17718" target="_blank" title=".net Framework 框架">sdk下载</a></li>	             
-	                     <li><a href="https://www.visualstudio.com/zh-cn/downloads/download-visual-studio-vs.aspx" target="_blank">visualstudio</a></li>
-	                     <li><a href="https://code.visualstudio.com/" target="_blank">visualcode</a></li>                
-	                     <li><a href="https://www.mongodb.org/" target="_blank" title="数据库">MongoDB </a></li>
-	                     <li><a href="http://www.icsharpcode.net/OpenSource/SD/Download/" target="_blank" title="编写c# ide">SharpDevelop</a></li>
-	                </ul>
-	    	                
-                </div>
-                               
-                <div class="site-area floor_2">
-	                <div class="floor">ios</div>	
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">社区</a></li>
-	                    <li><a href="https://developer.apple.com/cn/xcode/ide/" target="_blank">苹果官网</a></li>
-	                    <li><a href="https://swift.org/" target="_blank">swift</a></li>
-	                
-	                    <li><a href="http://www.code4app.com/index.php" target="_blank">code4app</a></li>
-                        <li><a href="http://www.cocoachina.com/" target="_blank">Cocoachina</a></li>
-                        <li><a href="http://www.oschina.net/ios/home" target="_blank">oschina</a></li>
-                        <li><a href="http://bbs.csdn.net/forums/ios" target="_blank">csdn-ios</a></li>
-                        <li><a href="http://bbs.51cto.com/forumdisplay.php?fid=292" target="_blank">51cto</a></li>
-	                    <li><a href="http://www.iosappx.com/" target="_blank">苹果联盟</a></li>
-	                    
-	                </ul>
-	                  <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">名博</a></li>
-	                    <li><a href="http://onevcat.com/#blog" target="_blank">OneV’s</a></li>
-                        <li><a href="https://github.com/CoderMJLee" target="_blank">M了个J</a></li>
-                        <li><a href="http://blog.sunnyxx.com/" target="_blank">sunnyxx</a></li>
-                        <li><a href="http://blog.csdn.net/kmyhy" target="_blank">kmyhy</a></li>
-                        <li><a href="http://blog.devtang.com/" target="_blank">唐巧</a></li>
-                        <li><a href="http://beyondvincent.com/" target="_blank">破船</a></li>
-                        <li><a href=" http://casatwy.com/" target="_blank">田伟宇</a></li>
-                        <li><a href="http://www.cocoachina.com/bbs/read.php?tid=299721" target="_blank">更多</a></li>
-                 
-	                </ul>
-	                 <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">云测</a></li>
-	                     <li><a href="http://pre.im/" target="_blank">Pre内测分发</a></li> 
-	                    <li><a href="http://www.testin.cn/" target="_blank">testin</a></li>
-	                    <li><a href="https://www.pgyer.com/" target="_blank">蒲公英</a></li>                        
-                        <li><a href=" http://mtc.baidu.com/" target="_blank">百度云测</a></li> 
-                        <li><a href="http://www.yiceyun.com/" target="_blank">易测云</a></li>
-                        <li><a href="http://fir.im/" target="_blank">fir</a></li>
-	                </ul>
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">类库</a></li>	                    
-                        <li><a href="https://github.com/BradLarson/GPUImage" target="_blank">GPUImage</a></li> 
-                        <li><a href="https://github.com/CoderMJLee/MJExtension" target="_blank">MJExtension</a></li> 
-                         <li><a href="https://github.com/SnapKit/Masonry" target="_blank">Masonry</a></li> 
-                        <li><a href="https://github.com/TransitApp/SVProgressHUD" target="_blank">提示器</a></li>                    
-	                    <li><a href="https://github.com/AFNetworking/AFNetworking" title="AFNetworking" target="_blank">AFNetwork..</a></li>
-                       <li><a href="https://github.com/ZipArchive/ZipArchive" target="_blank">ZipArchive</a></li>
-	                </ul>
-	                 <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">视频</a></li>	                    
-                        <li><a href="http://www.code4app.com/course" target="_blank">ios基础课程</a></li> 
-                        <li><a href="http://edu.51cto.com/course/course_id-1245.html" target="_blank">oc基础课程</a></li> 
-                        <li><a href="http://www.swiftv.cn/" target="_blank">swift教程</a></li>                      
-	                </ul>
-	                 <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">面试</a></li>	                    
-                        <li><a href="http://blog.csdn.net/shuju345/article/category/5763589" target="_blank" title="面试题目">ios面试</a></li> 
-                        <li><a href="http://www.360doc.com/content/14/0522/10/8772388_379844601.shtml" target="_blank">面试题库</a></li> 
-                        <li><a href="http://blog.sina.com.cn/s/blog_b0c5954101014upb.html" target="_blank">面试题</a></li>                      
-	                </ul>
-                </div>
-                
-                <div class="site-area floor_6">
-	                <div class="floor">c++</div>	
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">名博</a></li>
-	                    <li><a href="http://blog.codingnow.com/" target="_blank">云风的blog</a></li>	 
-	                    <li><a href="http://mindhacks.cn/" target="_blank">刘未鹏</a></li>
-	                    <li><a href="http://coolshell.cn/featured_posts" target="_blank">陈皓</a></li>
-	                    <li><a href="http://blog.csdn.net/solstice/" target="_blank">陈硕的Blog</a></li>
-	                    <li><a href="http://blog.csdn.net/baimafujinji/article/category/1608089" target="_blank">算法之美</a></li>	                    
-	                </ul>
-	                 <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">教程</a></li>
-	                    <li><a href="http://www.21edu8.com/university/jisuanji/29098/" target="_blank">星火视频</a></li> 
-	                    <li><a href=" http://edu.51cto.com/course/courseList/id-12.html" target="_blank">51cto视频</a></li>      
-	                    <li><a href="http://www.jikexueyuan.com/course/cpp/" target="_blank">极客视频</a></li>                
-	                 </ul>
-	                 <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">开发</a></li>
-	                    <li><a href="http://www.qt.io/download/" target="_blank">qt</a></li>
-	                   
-	                    <li><a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/galileosr2" target="_blank">eclipse</a></li> 
-	                     <li><a href="https://www.visualstudio.com/zh-cn/downloads/download-visual-studio-vs.aspx" target="_blank">visualstudio</a></li>
-	                </ul>                
-                </div>
-            
-               <div class="site-area floor_7">
-	                <div class="floor">coco2d</div>	
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
-	                    <li><a href="http://www.cocos.com/download/" target="_blank">cocos引擎</a></li>
-	                    <li><a href="http://www.cocoachina.com/bbs/thread.php?fid=41" target="_blank">cocoachina</a></li>	                 
-	                    <li><a href="http://www.icoolxue.com/album/show/12" target="_blank">爱酷教程</a></li>
-	                    <li><a href="http://edu.51cto.com/course/course_id-579.html" target="_blank">51cto教程</a></li>
-	                </ul>
-	        
-                </div>
-         
-                <div class="site-area floor_8">
-	                <div class="floor">php</div>	
-	                <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">入门</a></li>
-	                     <li><a href="http://www.w3school.com.cn/php/" target="_blank">php语法参考</a></li>	                    
-	                     <li><a href="http://www.php100.com/" target="_blank">PHP100</a></li>
-	                     <li><a href="http://www.learnphp.cn/index.html" target="_blank">PHP基础</a></li>
-	                     <li><a href="http://www.runoob.com/php/php-tutorial.html" target="_blank">菜鸟教程</a></li>
-	                     <li><a href="http://school.php1.cn/" target="_blank">php1</a></li>
-	                </ul>
-	                <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">框架</a></li>	         
-	                     <li><a href="http://www.thinkphp.cn/" target="_blank">ThinkPHP</a></li>	                     
-	                     <li><a href="http://www.golaravel.com/" target="_blank">Laravel</a></li>
-	                     <li><a href="http://www.yiiframework.com/" target="_blank">yii</a></li>
-	                     <li><a href="https://www.phalconphp.com/zh/" target="_blank">phalcon </a></li>
-	                     <li><a href="http://www.onethink.cn/" target="_blank">oneThink</a></li>
-	                     <li><a href="https://cn.wordpress.org/" target="_blank">wordpress</a></li>
-	                     <li><a href=" http://typecho.org/" target="_blank">typecho</a></li>
-	                </ul>
-	                
-	                 <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">环境</a></li>
-	                     <li><a href="http://www.apache.org/dyn/closer.cgi" target="_blank">apache</a></li>
-	                     <li><a href="https://www.apachefriends.org/zh_cn/index.html" target="_blank">xampp</a></li>
-	                     <li><a href=" http://www.wampserver.com/en/" target="_blank">wampserver</a></li>
-	                     <li><a href="http://www.mysql.com/downloads/" target="_blank">mysql</a></li>
-	                     <li><a href="https://www.jetbrains.com/phpstorm/" target="_blank" title="收费php开发IDE">phpstorm</a></li>
-	                     <li><a href="https://www.jetbrains.com/webstorm/" target="_blank">webstorm</a></li>
-	                     <li><a href="http://www.zend.com/en/products/studio" target="_blank" title="php开发IDE">zendstudio</a></li>
-	                     <li><a href="http://www.eclipse.org/downloads/packages/eclipse-php-developers/heliosr" target="_blank">Eclipse</a></li>
-	                </ul>          
-	                    <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">工具</a></li>
-	                     <li><a href="https://www.navicat.com/products/navicat-for-mysql" target="_blank">Navicat</a></li>
-	                     <li><a href=" http://doc.mysql.cn/" target="_blank">mysql手册</a></li>
-	                     <li><a href="https://coding.net/" target="_blank" title="git代码托管">coding</a></li>
-                         <li><a href="http://code.taobao.org/" target="_blank">淘宝svn</a></li>
-                         <li><a href=" http://www.qiniu.com/" target="_blank">7牛云存储</a></li>
-                         <li><a href="http://www.mysql.com/downloads/" target="_blank">mysql下载</a></li>  
-                         <li><a href="http://www.phpmyadmin.net/" target="_blank" title="数据库管理">phpmyadmin</a></li>                        
-	                 </ul> 	 
-	                 <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">域名</a></li>
-	                       <li><a href="https://domains.qcloud.com/" target="_blank">腾讯云</a></li>
-	                       <li><a href="http://wanwang.aliyun.com/" target="_blank">万网</a></li>	                       
-	                   </ul>   
-	                     
-                </div>
-         
-                 <div class="site-area floor_9">
-	                <div class="floor">android</div>	
-	                <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
-	                     <li><a href="http://www.android-studio.org/" target="_blank">android中文</a></li>
-	                     <li><a href="http://www.oschina.net/android/" target="_blank">oschina</a></li>	
-	                     <li><a href="http://luo.apkbus.com/" target="_blank">老罗教程</a></li>
-	                     <li><a href="http://www.apkbus.com/" target="_blank">安卓巴士</a></li>
-	                     
-	                </ul>
-	                <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">分发</a></li>
-	                     <li><a href=" http://fir.im/" target="_blank" title="应用分发">fir</a></li>
-	                     <li><a href=" http://pre.im/" target="_blank" title="应用分发">pre</a></li>	          	                     
-	                </ul>
-	               
-                </div>
-                <div class="site-area floor_2">
-	                <div class="floor">erlang</div>	
-	                <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
-	                     <li><a href="http://www.erlang.org/" target="_blank">erlang官网</a></li>
-	                     <li><a href="http://www.erlang-cn.com/" target="_blank">erlang教程</a></li>	        
-	                </ul>
-                </div>
-                 
-                <div class="site-area floor_1">
-	                <div class="floor">lua</div>	
-	                <ul> 
-	                     <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
-	                     <li><a href="http://www.lua.org/" target="_blank">Lua官网</a></li>
-	                     <li><a href="http://www.luaer.cn/" target="_blank">Lua开发者</a></li>
-	                     <li><a href="http://manual.luaer.cn/" target="_blank">Lua文档</a></li>
-	                     <li><a href="http://www.runoob.com/lua/lua-tutorial.html" target="_blank">Lua入门</a></li>
-	                </ul>
-	                <ul>
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">服务器</a></li>
-	                    <li><a href="https://github.com/cloudwu/skynet" title="云风的服务器" target="_blank">skynet</a></li>	                 
-	                 </ul>
-                </div>
-                <div class="site-area floor_1">
-	                <div class="floor">nodejs</div>	
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
-	                    <li><a href="https://nodejs.org/en/" target="_blank">nodejs官网</a></li>
-	                    <li><a href="http://pomelo.netease.com/" title="网易服务器" target="_blank">pomelo</a></li>	  
-	                    <li><a href="https://cnodejs.org/" title="淘宝人搞的nodejs社区" target="_blank">nodejs社区</a></li>               	                
-	                </ul>
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">web框架</a></li>
-	                    <li><a href="http://koa.bootcss.com/" target="_blank">koa</a></li>
-	                    <li><a href="http://www.expressjs.com.cn/" title="nodejs 的配搭 express" target="_blank">express</a></li>
-	                    <li><a href="http://eggjs.org/" title="nodejs 的配搭 express" target="_blank">eggjs</a></li>
-	                    <li><a href="https://www.meteor.com/" title="全栈开发" target="_blank">meteor</a></li>
-	                    
-	                </ul>
-	                 <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">桌面开发</a></li>
-	                    <li><a href="http://nwjs.io/" title="nodejs 桌面应用" target="_blank">nwjs框架</a></li>
-	                    <li><a href="http://electron.atom.io/" title="Electron" target="_blank">Electron</a></li>
-	                </ul>
-	                
-                </div>
-                   <div class="site-area floor_1">
-	                <div class="floor">python</div>	
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
-	                    <li><a href="https://www.python.org/" target="_blank">python官网</a></li>
-	                    <li><a href="http://www.pythontab.com/" title="python资料" target="_blank">python 社区</a></li>	  
-	                    <li><a href="http://bbs.pythontab.com/forum.php" title="python论坛" target="_blank">python论坛</a></li>	                    
-	                </ul>
-                </div>
-                <div class="site-area floor_1">
-	                <div class="floor">Ruby</div>	
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
-	                    <li><a href="http://ruby-china.org/" target="_blank">Ruby中国</a></li>
-	                    <li><a href=" http://www.ruby-lang.org/zh_cn/" target="_blank">Ruby官网</a></li>
-	                    <li><a href=" http://www.runoob.com/ruby/ruby-tutorial.html" target="_blank">菜鸟网络</a></li>
-	                   
-	                </ul>
-                </div>
-                <div class="site-area floor_1">
-	                <div class="floor">Golang</div>	
-	                <ul> 
-	                    <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
-	                    <li><a href="https://www.golangtc.com/" target="_blank">Golang中国</a></li>
-	                    <li><a href="https://studygolang.com/" target="_blank">Golang社区</a></li>
-	                    <li><a href="http://www.runoob.com/ruby/go-tutorial.html" target="_blank">菜鸟网络</a></li>
-	                   
-	                </ul>
-                </div>
-        
-</div>
- 
-<div class="site-bottom container-fluid">
- 
-    <p>关于站点</p>	   
-    <p class="info">这是一个游戏程序员收集的站点，最早灵感参考与人人都是产品经理，后来根据现在目前的水平能力调整了一份出来</p>                    	 	   	
-         
-</div>
- 
-<div id="goToTop"><a href="javascript:"></a></div>
- 
-<script src="js/jquery.min.js" type="text/javascript"></script> 
-<script src="js/style.js" type="text/javascript"></script>
+		$('.science-surf').on('click', function (e) {
+			if ($('.science-surf').data('science')) {
+				$('.nav_list a').each(function (i) {
+					this.href = $(this).data('href');
+				});
+				$('.science-surf').text('科学上网');
+				$('.science-surf').data('science', false);
+			} else {
+				$('.nav_list a').each(function (i) {
+					$(this).data('href', this.href);
+					this.href = getProxyURL(this.href);
+				});
+				$('.science-surf').text('网址还原');
+				$('.science-surf').data('science', true);
+			}
+		});
 
+		$('a').each(function (i) {
+			$(this).data('aspm', i);
+		}).on('click', function (e) {
+			window._hmt = window._hmt || [];
+			_hmt.push(['_trackEvent', 'a', 'click', $(this).data('aspm')]);
+		});
+	</script>
+	<script src="https://hm.baidu.com/hm.js?9ec911f310714b9fcfafe801ba8ae42a"></script>
 </body>
+
 </html>
